@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='kemenag-icon.png') }}">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="bootstrap, bootstrap4">
+
+  <!-- ✅ Fix typo: Google Fonts family name -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- ✅ Ganti semua path CSS ke Flask static -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>Pendma Kota Surabaya</title>
+</head>
+
+<body>
+
+  <!-- ✅ Mobile menu -->
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- ✅ Navigation -->
+  <nav class="site-nav mb-5">
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-center">
+          <a href="/" class="logo menu-absolute m-0">
+            Pendma Kota Surabaya
+          </a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
+            <li class="active"><a href="/">Beranda</a></li>
+            <li class="has-children">
+              <a href="#">Layanan</a>
+              <ul class="dropdown">
+                <li><a href="#">Elements</a></li>
+                <!-- <li class="has-children">
+                  <a href="#">Menu Two</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Sub Menu One</a></li>
+                    <li><a href="#">Sub Menu Two</a></li>
+                    <li><a href="#">Sub Menu Three</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="#">Menu Three</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="/news">News</a></li> -->
+            <li><a href="/about">Tentang Kami</a></li>
+            <li class="has-children">
+              <a href="#">Lainnya</a>
+              <ul class="dropdown">
+                <li><a href="https://ptspjatim.kemenag.go.id/">PTSP Kemenag Jatim</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Ganti bagian tombol di dalam nav -->
+          <div class="auth-buttons menu-absolute">
+            <a href="/login" class="btn btn-primary btn-sm mr-2">Login</a>
+            <!-- <a href="/register" class="btn btn-primary btn-sm">Register</a> -->
+          </div>
+
+
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ Hero Section -->
+  <div class="untree_co-hero overlay" style="background-image: url({{ url_for('static', filename='images/kemenagsby-facia.jpg') }});">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+              <!-- ✅ Fix double href -->
+              <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="100">
+                Pelayanan Terpadu Satu Pintu (PTSP)
+              </h1>
+              <h3 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="200">
+                Seksi Pendidikan Madrasah Kantor Kementerian Agama Kota Surabaya
+              </h3>
+              <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
+                Layanan yang cepat, mudah, dan terintegrasi, dengan komitmen tinggi terhadap Zona Integritas, guna memastikan setiap kebutuhan masyarakat dipenuhi secara efisien, transparan, dan akuntabel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div> <!-- /.untree_co-hero -->
+
+  <!-- ============================= -->
+  <!-- Become an Instructor Section -->
+  <!-- ============================= -->
+  <div class="services-section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="section-title mb-3" data-aos="fade-up" data-aos-delay="0">
+            <h2 class="line-bottom mb-4">Kepala Seksi Pendidikan Madrasah</h2>
+          </div>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+            there live the blind texts. Separated they live.
+          </p>
+          <ul class="ul-check list-unstyled mb-5 primary" data-aos="fade-up" data-aos-delay="200">
+            <li>Behind the word Mountains.</li>
+            <li>Far far away Mountains.</li>
+            <li>Large language Ocean.</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+          <figure class="img-wrap-2">
+            <img src="{{ url_for('static', filename='images/teacher-min.jpg') }}" alt="Instructor" class="img-fluid">
+            <div class="dotted"></div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="untree_co-section">
+    <div class="container"> 
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="0">
+          <h2 class="line-bottom text-center mb-4">We Have Best Education</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature">
+            <span class="uil uil-music"></span>
+            <h3>Music Class</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature">
+            <span class="uil uil-calculator-alt"></span>
+            <h3>Math Class</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature">
+            <span class="uil uil-book-open"></span>
+            <h3>English Class</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature">
+            <span class="uil uil-book-alt"></span>
+            <h3>Reading for Kids</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature">
+            <span class="uil uil-history"></span>
+            <h3>History Class</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature">
+            <span class="uil uil-headphones"></span>
+            <h3>Music</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /.container -->
+  </div> <!-- /.untree_co-section -->
+
+
+  <div class="untree_co-section pt-0 bg-img overlay" 
+      style="background-image: url({{ url_for('static', filename='images/img-school-1-min.jpg') }});">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-lg-7">
+          <h2 class="text-white mb-3" data-aos="fade-up" data-aos-delay="0">Education for Tomorrow's Leaders</h2>
+          <p class="text-white h5 mb-4" data-aos="fade-up" data-aos-delay="100">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+            there live the blind texts.
+          </p>
+          <p><a href="#" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="200">Enroll Now</a></p>
+        </div>
+      </div>
+    </div>  
+  </div> <!-- /.untree_co-section -->
+
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 mb-5">
+          <h2 class="line-bottom mb-4" data-aos="fade-up" data-aos-delay="0">About Us</h2>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, 
+            a large language ocean.
+          </p>
+          <ul class="list-unstyled ul-check mb-5 primary" data-aos="fade-up" data-aos-delay="200">
+            <li>Separated they live</li>
+            <li>Bookmarksgrove right at the coast</li>
+            <li>Large language ocean</li>
+          </ul>
+
+          <div class="row count-numbers mb-5">
+            <div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+              <span class="counter d-block"><span data-number="12023">0</span><span>+</span></span>
+              <span class="caption-2">No. Students</span>
+            </div>
+            <div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <span class="counter d-block"><span data-number="49">0</span></span>
+              <span class="caption-2">No. Teachers</span>
+            </div>
+            <div class="col-4 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <span class="counter d-block"><span data-number="12">0</span></span>
+              <span class="caption-2">No. Awards</span>
+            </div>
+          </div>
+
+          <p data-aos="fade-up" data-aos-delay="300">
+            <a href="#" class="btn btn-primary mr-1">Admission</a>
+            <a href="#" class="btn btn-outline-primary">Learn More</a>
+          </p>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="bg-1"></div>
+          <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap">
+            <span class="play-wrap"><span class="icon-play"></span></span>
+            <img src="{{ url_for('static', filename='images/img-school-4-min.jpg') }}" alt="Image" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /.untree_co-section -->
+
+
+  <div class="untree_co-section bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 text-center mx-auto">
+
+          <h3 class="line-bottom mb-4">Testimonials</h3>
+          <div class="owl-carousel wide-slider-testimonial">
+            
+            <div class="item">
+              <blockquote class="block-testimonial">
+                <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, 
+                a large language ocean.&rdquo;</p>
+                <div class="author">
+                  <img src="{{ url_for('static', filename='images/person_1.jpg') }}" alt="Free template by TemplateUX">
+                  <h3>John Doe</h3>
+                  <p class="position">CEO, Founder</p>
+                </div>
+              </blockquote>
+            </div>
+
+            <div class="item">
+              <blockquote class="block-testimonial">
+                <p>&ldquo;When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her 
+                hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. 
+                Pityful a rethoric question ran over her cheek, then she continued her way.&rdquo;</p>
+                <div class="author">
+                  <img src="{{ url_for('static', filename='images/person_2.jpg') }}" alt="Free template by TemplateUX">
+                  <h3>James Woodland</h3>
+                  <p class="position">Designer at Facebook</p>
+                </div>
+              </blockquote>
+            </div>
+
+            <div class="item">
+              <blockquote class="block-testimonial">
+                <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                <div class="author">
+                  <img src="{{ url_for('static', filename='images/person_3.jpg') }}" alt="Free template by TemplateUX">
+                  <h3>Rob Smith</h3>
+                  <p class="position">Product Designer at Twitter</p>
+                </div>
+              </blockquote>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="0">
+          <h2 class="line-bottom text-center mb-4">Pricing</h2>
+          <p>
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+            there live the blind texts.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="pricing">
+            <div class="pricing-body">
+              <h3 class="pricing-plan-title">Starter</h3>
+              <div class="price"><span class="fig">$50.99</span><span>/month</span></div>
+              <p class="mb-4">
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                there live the blind texts.
+              </p>
+              <p><a href="#" class="btn btn-outline-primary">Get Started</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing">
+            <div class="pricing-body">
+              <h3 class="pricing-plan-title">Business</h3>
+              <div class="price"><span class="fig">$99.99</span><span>/month</span></div>
+              <p class="mb-4">
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                there live the blind texts.
+              </p>
+              <p><a href="#" class="btn btn-primary">Get Started</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="pricing">
+            <div class="pricing-body">
+              <h3 class="pricing-plan-title">Premium</h3>
+              <div class="price"><span class="fig">$199.99</span><span>/month</span></div>
+              <p class="mb-4">
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                there live the blind texts.
+              </p>
+              <p><a href="#" class="btn btn-outline-primary">Get Started</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /.untree_co-section -->
+
+
+  <!-- Footer -->
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-6 mr-auto">
+          <div class="widget">
+            <h3>Tentang Kami</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+          <div class="widget">
+            <h3>Connect</h3>
+            <ul class="list-unstyled social">
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+              <li><a href="#"><span class="icon-dribbble"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="widget">
+            <h3>Narahubung Kantor Kementerian Agama Kota Surabaya</h3>
+            <a href="https://maps.app.goo.gl/vdwPSmHhrCqkkDV17">
+              <address>Jl. Masjid Al-AkbarTimur No.4, Gayungan, Kec. Gayungan, Surabaya, Jawa Timur 60234</address>
+            </a>
+            <ul class="list-unstyled mb-4">
+              <li><p>Telp. (031) 8285319</p></li>
+              <li></p>Jam Operasional Senin - Jumat, 07.30 - 16.00</p></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script>.
+            All Rights Reserved. — Developed by <a href=" https://github.com/adherwp" class="text-warning">our staff</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <!-- JS Files -->
+  <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.animateNumber.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.fancybox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
