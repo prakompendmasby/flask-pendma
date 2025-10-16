@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='kemenag-icon.png') }}">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="bootstrap, bootstrap4">
+
+  <!-- ✅ Fix typo: Google Fonts family name -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- ✅ Ganti semua path CSS ke Flask static -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>Pendma Surabaya</title>
+</head>
+
+<body>
+
+  <!-- ✅ Mobile menu -->
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- ✅ Navigation -->
+  <nav class="site-nav mb-5">
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-center">
+          <a href="/" class="logo menu-absolute m-0 d-flex align-items-center justify-content-center">
+            <img src="{{ url_for('static', filename='logo-pendma.png') }}" style="height: 40px; width: auto; margin-right: 10px;">
+          </a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
+            <li><a href="/">Beranda</a></li>
+            <li class="has-children">
+              <a href="#">Layanan</a>
+              <ul class="dropdown">
+                <li><a href="#">Elements</a></li>
+                <!-- <li class="has-children">
+                  <a href="#">Menu Two</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Sub Menu One</a></li>
+                    <li><a href="#">Sub Menu Two</a></li>
+                    <li><a href="#">Sub Menu Three</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="#">Menu Three</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="/news">News</a></li> -->
+            <li class="active"><a href="/contact">Pengaduan</a></li>
+            <li class="has-children">
+              <a href="#">Lainnya</a>
+              <ul class="dropdown">
+                <li><a href="https://ptspjatim.kemenag.go.id/" target="_blank" rel="noopener noreferrer">PTSP Kemenag Jatim</a></li>
+              </ul>
+            </li>
+            <li><a href="/about">Tentang Kami</a></li>
+          </ul>
+
+          <!-- <a href="/login" class="btn-book btn btn-secondary btn-sm menu-absolute">Admin</a> -->
+
+          <!-- Ganti bagian tombol di dalam nav -->
+          <!-- <div class="auth-buttons menu-absolute">
+            <a href="/login" class="btn btn-primary btn-sm mr-2">Login</a>
+            <a href="/register" class="btn btn-primary btn-sm">Register</a>
+          </div> -->
+
+
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- ✅ Hero Section -->
+  <div class="untree_co-hero overlay" style="background-image: url({{ url_for('static', filename='images/pendma-team.jpg') }});">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+              <!-- ✅ Fix double href -->
+              <div class="mb-5 text-white desc mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <p>Another free template by <a href="https://untree.co/" target="_blank" class="link-highlight">Untree.co</a>. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div> <!-- /.untree_co-hero -->
+
+
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row mb-5">
+        <!-- Information -->
+        <div class="col-lg-4 mb-5 order-2 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-info">
+            <div class="address mt-4">
+              <i class="icon-room"></i>
+              <h4 class="mb-2">Lokasi:</h4>
+              <p>Jl. Masjid Al-AkbarTimur No.4, Gayungan, Kec. Gayungan, Surabaya, Jawa Timur 60234</p>
+            </div>
+            <div class="open-hours mt-4">
+              <i class="icon-clock-o"></i>
+              <h4 class="mb-2">Jam Operasional:</h4>
+              <p>
+                Senin - Jumat:<br>
+                07.30 - 16.00
+              </p>
+            </div>
+            <div class="email mt-4">
+              <i class="icon-envelope"></i>
+              <h4 class="mb-2">Email:</h4>
+              <p>pendma.sby@kemenag.go.id</p>
+            </div>
+            <div class="phone mt-4">
+              <i class="icon-phone"></i>
+              <h4 class="mb-2">Telp:</h4>
+              <p>(031) 8285319</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulir Kontak -->
+        <div class="col-lg-7 mr-auto order-1" data-aos="fade-up" data-aos-delay="200">
+        {% if respons %}
+          <div class="alert alert-{{ alert_type }}" role="alert" 
+              style="border-radius: 6px; padding: 10px 15px; margin-bottom: 20px;">
+            {{ respons }}
+          </div>
+        {% endif %}
+          <form action="" method="POST">
+            <div class="row">
+              <div class="col-6 mb-3">
+                <input type="text" name="name" class="form-control" placeholder="Nama Anda" required>
+              </div>
+              <div class="col-6 mb-3">
+                <input type="tel" name="phone" class="form-control" placeholder="08123456789" required>
+              </div>
+              <div class="col-12 mb-3">
+                <input type="text" name="subject" class="form-control" placeholder="Judul Pengaduan" required>
+              </div>
+              <div class="col-12 mb-3">
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Isi Pengaduan" required></textarea>
+              </div>
+
+              <div class="col-12">
+                <input type="submit" value="Send Message" class="btn btn-primary">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /.untree_co-section -->
+
+
+  <!-- Footer -->
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-6 mr-auto">
+          <div class="widget">
+            <h3>Tentang Kami</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+          <div class="widget">
+            <h3>Connect</h3>
+            <ul class="list-unstyled social">
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+              <li><a href="#"><span class="icon-dribbble"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="widget">
+            <h3>Narahubung Kantor Kementerian Agama Kota Surabaya</h3>
+            <a href="https://maps.app.goo.gl/vdwPSmHhrCqkkDV17">
+              <address>Jl. Masjid Al-AkbarTimur No.4, Gayungan, Kec. Gayungan, Surabaya, Jawa Timur 60234</address>
+            </a>
+            <ul class="list-unstyled mb-4">
+              <li><p>Telp. (031) 8285319</p></li>
+              <li></p>Jam Operasional Senin - Jumat, 07.30 - 16.00</p></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script>.
+            All Rights Reserved. — Developed by 
+            <a href=" https://github.com/adherwp" class="text-warning" target="_blank" rel="noopener noreferrer">our staff</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <!-- JS Files -->
+  <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.animateNumber.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.fancybox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>

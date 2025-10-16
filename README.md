@@ -1,4 +1,4 @@
-# statistik_madrasah
+# Pendma Kota Surabaya (Python-Flask)
 
 # Step by step
 1. python -m venv (change "venv" with env folder name, default venv)
