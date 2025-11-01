@@ -1,8 +1,11 @@
+from dotenv import load_dotenv
 from flask_bootstrap import Bootstrap
 from flask import Flask, render_template, flash, request, redirect, url_for
 from google.oauth2.service_account import Credentials
 import datetime
 import gspread
+import json
+import os
 import random
 import string
 
@@ -15,15 +18,21 @@ def generate_ticket_time():
 
 
 def connect_google_sheet(worksheet_name, sheet_name):
+
+    load_dotenv()
+    creds_json = os.getenv("GOOGLE_CREDENTIALS")
+    creds_dict = json.loads(creds_json)
+
     scope = [
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive"
     ]
 
-    creds = Credentials.from_service_account_file(
-        ".creds/google_credentials.json",
-        scopes=scope
-    )
+    creds = Credentials.from_service_account_info(creds_dict, scopes=scope)
+    # creds = Credentials.from_service_account_file(
+    #     ".creds/google_credentials.json",
+    #     scopes=scope
+    # )
     client = gspread.authorize(creds)
     # sheet = client.open(sheet_name).sheet1   # open the first worksheet
     worksheet = client.open(worksheet_name).worksheet(sheet_name)  # pilih tab bernama "Data"
