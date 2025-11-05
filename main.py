@@ -10,11 +10,15 @@ import random
 import string
 
 
-def generate_ticket_time():
+def generate_ticket_code():
     # Format timestamp
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S:%f")
-    date, time = timestamp.split(" ")
-    return date, time
+    timestamp = datetime.datetime.now().strftime("%Y%m%d#%H%M%S#%f#%a").upper()
+    
+    # Random uppercase letters
+    random_letters = ''.join(random.choice(string.ascii_uppercase) for _ in range(3))
+    
+    # Combine with #
+    return f"{timestamp}#{random_letters}"
 
 
 def connect_google_sheet(worksheet_name, sheet_name):
@@ -72,10 +76,12 @@ def about():
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
+    page_type = "view"
     respons = None
     alert_type = None
     try:
         if request.method == "POST":
+            ticket_code = generate_ticket_code()
             name = request.form["name"]
             phone = request.form["phone"]
             subject = request.form["subject"]
@@ -83,15 +89,24 @@ def contact():
             worksheet_name = "Daftar Pengaduan"
             sheet_name = "Data"
 
-            save_to_sheet(worksheet_name, sheet_name, [name, phone, subject, message])
+            save_to_sheet(worksheet_name, sheet_name, [ticket_code, name, phone, subject, message])
 
+            page_type = "ticket"
             respons = "✅ Data berhasil tersimpan!"
             alert_type = "success"
+
+            return render_template("contact.html", respons=respons, alert_type=alert_type, page_type=page_type, ticket_code=ticket_code)
     except Exception as e:
         respons = f"❌ Gagal menyimpan data, silakan coba lagi. Error: {e}"
         alert_type = "danger"
     
-    return render_template("contact.html", respons=respons, alert_type=alert_type)
+    return render_template("contact.html", respons=respons, alert_type=alert_type, page_type=page_type)
+
+
+
+@app.route('/contact-check', methods=['GET', 'POST'])
+def contact_check():
+    return render_template('contact-check.html')
 
 
 

@@ -72,8 +72,8 @@
             <li class="has-children">
               <a href="#">Pengaduan</a>
               <ul class="dropdown">
-                <li class="active"><a href="/contact">Ajukan Pengaduan</a></li>
-                <li><a href="/contact-check">Cek Pengaduan</a></li>
+                <li><a href="/contact">Ajukan Pengaduan</a></li>
+                <li class="active"><a href="/contact-check">Cek Pengaduan</a></li>
                 <li><a href="https://jatim.kemenag.go.id/pengaduan" target="_blank" rel="noopener noreferrer">DUMAS JATIM</a></li>
               </ul>
             </li>
@@ -102,125 +102,26 @@
       </div>
     </div>
   </nav>
-  
-  <!-- ✅ Hero Section -->
-  <div class="untree_co-hero overlay" style="background-image: url({{ url_for('static', filename='images/pendma-team.jpg') }});">
+
+
+  <div class="untree_co-hero overlay" style="background-color: rgba(0, 102, 204, 0.9);">
     <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-12">
-          <div class="row justify-content-center">
-            <div class="col-lg-12 text-center">
-              <!-- ✅ Fix double href -->
-                {% if page_type == "view" %}
-                <h1 class="mb-4 heading text-white" data-aos="fade-up" data-aos-delay="200">
-                  Bantu Kami Meningkatkan Layanan
-                </h1>
-                <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
-                  Kami sangat menghargai setiap masukan dan pengaduan dari Anda.
-                  Dengan sistem pengaduan yang cepat, transparan, dan mudah, kami berkomitmen untuk terus meningkatkan kualitas layanan.
-                  Setiap pengaduan akan diproses dengan serius untuk memastikan setiap masalah terselesaikan dengan baik dan efisien
-                </p>
-                {% elif page_type == "ticket" %}
-                <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
-                  {{ respons }}
-                </p>
-                <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
-                  Kode tiket pengaduan anda adalah
-                </p>
-                <div data-aos="fade-up" data-aos-delay="250">
-                  <span 
-                    style="
-                      display: inline-block;
-                      background-color: #28a745;
-                      color: white;
-                      padding: 10px 20px;
-                      border-radius: 8px;
-                      font-size: 2rem;
-                      font-weight: 600;
-                      letter-spacing: 1px;
-                    ">
-                    {{ ticket_code }}
-                  </span>
-                </div>
-                {% else %}
-                <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
-                  Halaman tidak ditemukan
-                </p>
-                {% endif %}
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-8 col-lg-6 text-center"  data-aos="fade-up" data-aos-delay="200">
+                <form action="" method="POST" class="p-4 rounded-4 shadow-lg" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(6px);">                
+                    <h1 class="text-white mb-4">Cek Pengaduan</h1>
+                    <div class="mb-3">
+                        <input type="text" name="subject" class="form-control text-white" placeholder="Kode Tiket Pengaduan" required 
+                            style="background-color: rgba(255,255,255,0.25); border: none; border-radius: 8px; padding: 12px 16px;">
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" value="Cek Pengaduan" class="btn btn-primary">
+                    </div>
+                </form>
             </div>
-          </div>
         </div>
-      </div>
     </div>
   </div>
-
-  {% if page_type == "view" %}
-  <div class="untree_co-section">
-    <div class="container">
-      <div class="row mb-5">
-        <!-- Information -->
-        <div class="col-lg-4 mb-5 order-2 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-          <div class="contact-info">
-            <div class="address mt-4">
-              <i class="icon-room"></i>
-              <h4 class="mb-2">Lokasi:</h4>
-              <p>Jl. Masjid Al-AkbarTimur No.4, Gayungan, Kec. Gayungan, Surabaya, Jawa Timur 60234</p>
-            </div>
-            <div class="open-hours mt-4">
-              <i class="icon-clock-o"></i>
-              <h4 class="mb-2">Jam Operasional:</h4>
-              <p>
-                Senin - Jumat:<br>
-                07.30 - 16.00
-              </p>
-            </div>
-            <div class="email mt-4">
-              <i class="icon-envelope"></i>
-              <h4 class="mb-2">Email:</h4>
-              <p>kotasurabaya@kemenag.go.id</p>
-            </div>
-            <div class="phone mt-4">
-              <i class="icon-phone"></i>
-              <h4 class="mb-2">Telp:</h4>
-              <p>(031) 8285319</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Formulir Kontak -->
-        <div class="col-lg-7 mr-auto order-1" data-aos="fade-up" data-aos-delay="200">
-        {% if respons %}
-          <div class="alert alert-{{ alert_type }}" role="alert" 
-              style="border-radius: 6px; padding: 10px 15px; margin-bottom: 20px;">
-            {{ respons }}
-          </div>
-        {% endif %}
-          <form action="" method="POST">
-            <div class="row">
-              <div class="col-6 mb-3">
-                <input type="text" name="name" class="form-control" placeholder="Nama Anda" required>
-              </div>
-              <div class="col-6 mb-3">
-                <input type="tel" name="phone" class="form-control" placeholder="08123456789" required>
-              </div>
-              <div class="col-12 mb-3">
-                <input type="text" name="subject" class="form-control" placeholder="Judul Pengaduan" required>
-              </div>
-              <div class="col-12 mb-3">
-                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Isi Pengaduan" required></textarea>
-              </div>
-
-              <div class="col-12">
-                <input type="submit" value="Kirim Pengaduan" class="btn btn-primary">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div> <!-- /.untree_co-section -->
-  {% endif %}
-
 
 
   <!-- Footer -->
