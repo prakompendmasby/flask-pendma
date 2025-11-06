@@ -54,6 +54,17 @@ def save_to_sheet(worksheet_name, sheet_name, data):
     print(f"Saved to sheet: {row_data}")
 
 
+def get_data_by_column(worksheet_name, sheet_name, column_name, value_search):
+    sheet = connect_google_sheet(worksheet_name, sheet_name)
+    records = sheet.get_all_records()  # list of dict
+
+    for row in records:
+        if str(row.get(column_name)).strip().lower() == str(value_search).strip().lower():
+            return row
+
+    return None
+
+
 
 def create_app():
   app = Flask(__name__)
@@ -86,10 +97,11 @@ def contact():
             phone = request.form["phone"]
             subject = request.form["subject"]
             message = request.form["message"]
+            status = "Proses"
             worksheet_name = "Daftar Pengaduan"
             sheet_name = "Data"
 
-            save_to_sheet(worksheet_name, sheet_name, [ticket_code, name, phone, subject, message])
+            save_to_sheet(worksheet_name, sheet_name, [ticket_code, name, phone, subject, message, status])
 
             page_type = "ticket"
             respons = "✅ Data berhasil tersimpan!"
@@ -106,7 +118,32 @@ def contact():
 
 @app.route('/contact-check', methods=['GET', 'POST'])
 def contact_check():
-    return render_template('contact-check.html')
+    page_type = "view"
+    respons = None
+    alert_type = None
+    try:
+        if request.method == "POST":
+            ticket_code = request.form["ticket-code"]
+            worksheet_name = "Daftar Pengaduan"
+            sheet_name = "Data"
+            column_name = "Kode Tiket"
+
+            hasil = get_data_by_column(worksheet_name, sheet_name, column_name, ticket_code)
+
+            if hasil:
+                respons = hasil
+                alert_type = "success"
+                page_type = "ticket"
+                return render_template("contact-check.html", respons=respons, alert_type=alert_type, page_type=page_type, ticket_code=ticket_code)
+            else:
+                respons = f"❌ Tidak ada data dengan kode tiket {ticket_code}"
+                alert_type = "danger"
+                return render_template("contact-check.html", respons=respons, alert_type=alert_type, page_type=page_type, ticket_code=ticket_code)
+    except Exception as e:
+        respons = f"❌ Gagal mencari data, silakan coba lagi. Error: {e}"
+        alert_type = "danger"
+    
+    return render_template('contact-check.html', respons=respons, alert_type=alert_type, page_type=page_type)
 
 
 
