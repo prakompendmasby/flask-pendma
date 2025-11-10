@@ -1,0 +1,41 @@
+<h2 style="color: rgba(19, 106, 213, 0.85);">PELAYANAN POTENSI KESISWAAN</h2>
+<ol>
+  <li>
+    Penerimaan dan Perencanaan Program
+    <ul>
+      <li>Seksi Pendidikan Madrasah melakukan koordinasi internal dan analisis kebutuhan layanan kesiswaan.</li>
+      <li>Menginventarisasi data madrasah dan peserta didik terkait potensi, minat, dan prestasi.</li>
+      <li>Menyusun Rencana Program dan Anggaran Bidang Potensi Kesiswaan (mengacu pada DIPA Penmad/Kankemenag).</li>
+    </ul>
+  </li>
+  <li>
+    Sosialisasi dan Pengumpulan Data Potensi
+    <ul>
+      <li>Menerbitkan Surat Edaran/Pemberitahuan kepada Kepala Madrasah.</li>
+      <li>Mengedarkan instrumen pendataan potensi dan prestasi siswa (Google Form, Excel, atau SIM Kesiswaan).</li>
+    </ul>
+  </li>
+  <li>
+    Pelayanan, Pembinaan, dan Fasilitasi
+    <ul>
+      <li>Melaksanakan bimbingan teknis (Bimtek) bagi pembina kesiswaan, guru BK, dan pembimbing lomba.</li>
+      <li>Memfasilitasi kegiatan pengembangan potensi siswa tingkat kabupaten/kota (misalnya: KSM, MYRES, lomba PAI, Pramuka Madrasah, dan lainnya).</li>
+      <li>Memberikan pendampingan dan konsultasi kepada madrasah yang memerlukan dukungan pembinaan.</li>
+    </ul>
+  </li>
+  <li>
+    Monitoring, Evaluasi, dan Pelaporan
+    <ul>
+      <li>Melaksanakan monitoring dan evaluasi (monev) pelaksanaan kegiatan di madrasah.</li>
+      <li>Mengumpulkan laporan kegiatan dan capaian prestasi siswa dari setiap madrasah.</li>
+      <li>Menganalisis hasil monev untuk menentukan langkah perbaikan.</li>
+    </ul>
+  </li>
+  <li>
+    Tindak Lanjut dan Penghargaan
+    <ul>
+      <li>Memberikan penghargaan dan sertifikat bagi siswa, madrasah, atau pembina berprestasi.</li>
+      <li>Melakukan refleksi kegiatan dan menyusun rencana peningkatan program untuk tahun berikutnya.</li>
+    </ul>
+  </li>
+</ol>

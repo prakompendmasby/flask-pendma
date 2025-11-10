@@ -1,0 +1,8 @@
+<h2 style="color: rgba(19, 106, 213, 0.85);">PERUBAHAN DATA KEPALA/BENDAHARA PADA EDM/ERKAM</h2>
+<ol>
+    <li>Surat Permohonan perubahan kepengurusan EDM/eRKAM</li>
+    <li>Surat Keterangan (SK) Kepala atau Bendahara Baru</li>
+</ol>
+<hr class="solid mb-4 mt-4">
+<h2 style="color: rgba(19, 106, 213, 0.85);">ALUR PELAYANAN</h2>
+Pemohon wajib datang ke Kantor Kementerian Agama Kota Surabaya

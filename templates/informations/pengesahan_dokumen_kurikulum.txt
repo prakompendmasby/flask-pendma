@@ -1,0 +1,29 @@
+<h2 style="color: rgba(19, 106, 213, 0.85);">PENGESAHAN DOKUMEN KURIKULUM</h2>
+<ol>
+  <li>Seluruh Madrasah dari RA, MI, MTs, MA membuat Dokumen Kurikulum beserta SKPBM.</li>
+  <li>
+    Untuk Dokumen Kurikulum dan SKPBM jenjang RA, MI, MTs:
+    <ol type="a">
+      <li>Melakukan validasi dan tanda tangan Dokumen Kurikulum dan SKPBM ke pengawas madrasah masing-masing.</li>
+      <li>Membawa Dokumen Kurikulum dan SKPBM yang sudah divalidasi dan ditandatangani oleh pengawas.</li>
+      <li>Kepala Seksi Pendidikan Madrasah melakukan validasi ulang dan melakukan pengesahan Dokumen Kurikulum dan SKPBM.</li>
+    </ol>
+  </li>
+  <li>
+    Untuk SKPBM jenjang MA:
+    <ol type="a">
+      <li>Melakukan validasi dan tanda tangan ke pengawas madrasah masing-masing.</li>
+      <li>Membawa SKPBM yang sudah divalidasi dan ditandatangani oleh pengawas.</li>
+      <li>Kepala Seksi Pendidikan Madrasah melakukan validasi ulang dan melakukan pengesahan SKPBM.</li>
+    </ol>
+  </li>
+  <li>
+    Untuk Dokumen Kurikulum jenjang MA:
+    <ol type="a">
+      <li>Melakukan validasi dan tanda tangan ke pengawas madrasah masing-masing.</li>
+      <li>Dokumen Kurikulum dilakukan scan dan dibuat dalam bentuk PDF.</li>
+      <li>PDF dikirim ke pegawai seksi Pendidikan Madrasah.</li>
+      <li>Dokumen Kurikulum disahkan oleh Kanwil Kemenag Jawa Timur. Setelahnya akan dibagikan ke madrasah melalui Seksi Pendidikan Madrasah.</li>
+    </ol>
+  </li>
+</ol>

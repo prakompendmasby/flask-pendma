@@ -1,0 +1,12 @@
+<h2 style="color: rgba(19, 106, 213, 0.85);">PERMOHONAN IZIN OPERASIONAL LEMBAGA</h2>
+<ol>
+    <li>Rencana Induk Pengembangan Madrasah (tujuan, visi, misi, dan strategi pengembangan madrasah)</li>
+    <li>Daftar Calon Guru dan Tenaga Kependidikan (Dilengkapi dengan riwayat hidup dan fotokopi ijazah)</li>
+    <li>Surat Keputusan Pengangkatan Calon Kepala Madrasah (Dilengkapi dengan riwayat hidup dan ijazah terakhir)</li>
+    <li>Daftar Sarana dan Prasarana</li>
+    <li>Fotokopi Sertifikat Kepemilikan Tanah (Sertifikat harus atas nama yayasan pendiri madrasah)</li>
+</ol>
+<hr class="solid mb-4 mt-4">
+<h2 style="color: rgba(19, 106, 213, 0.85);">ALUR PELAYANAN</h2>
+Proses pengajuan izin operasional pendirian madrasah secara online melibatkan beberapa tahap, mulai dari pembuatan akun, pengisian formulir, hingga verifikasi dan validasi oleh pihak Kemenag. Proses ini dilakukan melalui sistem ijopmadrasah yang dapat diakses melalui situs 
+<a href="https://ijopmadrasah.kemenag.go.id" class="text-primary" target="_blank" rel="noopener noreferrer">Website Ijop Madrasah</a>
