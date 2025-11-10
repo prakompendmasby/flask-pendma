@@ -115,7 +115,6 @@ def contact():
     return render_template("contact.html", respons=respons, alert_type=alert_type, page_type=page_type)
 
 
-
 @app.route('/contact-check', methods=['GET', 'POST'])
 def contact_check():
     page_type = "view"
@@ -144,6 +143,29 @@ def contact_check():
         alert_type = "danger"
     
     return render_template('contact-check.html', respons=respons, alert_type=alert_type, page_type=page_type)
+
+
+@app.route('/information')
+def information():
+    return render_template('information.html')
+
+
+@app.route('/information-read/', defaults={'title': None})
+@app.route('/information-read/<title>')
+def information_read(title):
+    content = None  # default
+    if title is not None:
+        try:
+            with open(f"templates/informations/{title}.txt", "r", encoding="utf-8") as f:
+                content = f.read()
+        except FileNotFoundError:
+            content = None
+    
+    return render_template(
+        'information-read.html',
+        title=title.replace('_', ' ') if title else None,
+        content=content
+    )
 
 
 

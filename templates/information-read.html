@@ -55,7 +55,7 @@
 
           <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
             <li><a href="/">Beranda</a></li>
-            <li><a href="/information">Layanan</a></li>
+            <li class="active"><a href="/information">Layanan</a></li>
             <li class="has-children">
               <a href="#">Profile</a>
               <ul class="dropdown">
@@ -68,7 +68,7 @@
               <a href="#">Pengaduan</a>
               <ul class="dropdown">
                 <li><a href="/contact">Ajukan Pengaduan</a></li>
-                <li class="active"><a href="/contact-check">Cek Pengaduan</a></li>
+                <li><a href="/contact-check">Cek Pengaduan</a></li>
                 <li><a href="https://jatim.kemenag.go.id/pengaduan" target="_blank" rel="noopener noreferrer">DUMAS JATIM</a></li>
               </ul>
             </li>
@@ -97,84 +97,52 @@
       </div>
     </div>
   </nav>
-
-
-  <div class="untree_co-hero overlay">
+  
+  <div class="untree_co-section" style="background: rgba(19, 106, 213, 0.85);">
     <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md-8 text-center"  data-aos="fade-up" data-aos-delay="200">
-                {% if page_type == "view" %}
-                  {% if respons %}
-                    <div class="alert alert-{{ alert_type }}" role="alert" 
-                        style="border-radius: 6px; padding: 10px 15px; margin-bottom: 20px;">
-                      {{ respons }}
-                    </div>
-                  {% endif %}
-                <form action="" method="POST" class="p-4 rounded-4 shadow-lg" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(6px);">                
-                    <p class="text-white mb-4 heading">Cek Pengaduan</P>
-                    <div class="mb-3">
-                        <input type="text" name="ticket-code" class="form-control text-white" placeholder="Kode Tiket Pengaduan" required 
-                            style="background-color: rgba(255,255,255,0.25); border: none; border-radius: 8px; padding: 12px 16px;">
-                    </div>
-                    <div class="col-12">
-                        <input type="submit" value="Cek Pengaduan" class="btn btn-primary">
-                    </div>
-                </form>
-                {% elif page_type == "ticket" %}
-                <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
-                  Kode tiket pengaduan
-                </p>
-                <div class="mb-4" data-aos="fade-up" data-aos-delay="250">
-                  <span 
-                  style="
-                      display: inline-block;
-                      color: white;
-                      border-radius: 8px;
-                      font-size: 2rem;
-                      font-weight: 600;
-                      letter-spacing: 1px;
-                    ">
-                    {{ ticket_code }}
-                  </span>
-                  {% if respons.get("Status") == "Proses" %}
-                  <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
-                    Status Pengaduan Anda sedang Diproses
-                  </p>
-                  {% elif respons.get("Status") == "Selesai" %}
-                  <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
-                    Status Pengaduan Anda Selesai Diproses
-                  </p>
-                  {% else %}
-                  <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
-                    Ada kesalahan pada status pengaduan, hubungi pihak terkait!!!
-                  </p>
-                  {% endif %}
-                </div>
-                <div class="card border-dark text-left mb-3" data-aos="fade-up" data-aos-delay="200">
-                  <div class="card-header">Pengaduan</div>
-                  <div class="card-body text-dark">
-                    <p class="card-text">
-                      Pengaduan dengan judul {{ respons.get("Judul") }} yang berisi {{ respons.get("Isi") }} 
-                      diajukan pada tanggal {{ respons.get("Tanggal") }} pukul {{ respons.get("Pukul") }} 
-                      oleh {{ respons.get("Nama") }} dengan nomor WhatsApp {{ respons.get("WhatsApp") }}
-                    </p>
-                    {% if respons.get("Respon") %}
-                    <p class="card-text">
-                      Respon kami : {{ respons.get("Respon") }}
-                    </p>
-                    {% endif %}
-                  </div>
-                </div>
-                <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="/" class="btn btn-secondary">Beranda</a></p>
-                {% else %}
-                <p class="mb-4 text-white" data-aos="fade-up" data-aos-delay="200">
-                  Halaman tidak ditemukan
-                </p>
-                {% endif %}
-            </div>
+      {% if title and content %}
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="line-bottom text-center text-white">INFORMASI PELAYANAN</h2>
+          <p class="line-bottom text-center text-white mb-2">{{ title.upper() }}</p>
         </div>
+      </div>
+
+      <div class="row align-items-stretch">
+        <div class="col-lg-12 mb-4"  data-aos="fade-up" data-aos-delay="200">
+          <div class="media-h d-flex h-100">
+            <div class="media-h-body">
+              <p class="mb-4" data-aos="fade-up" data-aos-delay="100"><a href="/information" class="btn btn-secondary"><i class="fa-solid fa-arrow-left mr-2"></i>kembali</a></p>
+              <div class="meta ">
+                <span class="icon-calendar mr-2"></span>
+                <span>
+                  <script>
+                      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                      const today = new Date();
+                      document.write(today.toLocaleDateString('en-US', options));
+                  </script>
+                </span>
+                <span class="icon-person mr-2 ml-2"></span>
+                <span>Admin</span>
+              </div>
+              <p>
+                {{ content|safe }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="line-bottom text-center text-white">TIDAK ADA INFORMASI YANG DIPILIH</h2>
+          <p class="mb-4" data-aos="fade-up" data-aos-delay="100"><a href="/information" class="btn btn-secondary"><i class="fa-solid fa-arrow-left mr-2"></i>kembali</a></p>
+        </div>
+      </div>
+      {% endif %}
     </div>
   </div>
+
 
 
   <!-- Footer -->

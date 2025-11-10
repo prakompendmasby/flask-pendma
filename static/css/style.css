@@ -1212,7 +1212,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .category {
   display: inline-block;
   padding: 20px;
-  background: rgba(19, 106, 213, 0.05);
+  background: rgb(240, 240, 240);
   border-radius: 4px;
   text-decoration: none !important; }
   .category, .category h3, .category span {
@@ -1684,4 +1684,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .auth-buttons .btn-outline-light:hover {
   background-color: #fff;
   color: #007bff; /* sesuaikan dengan tema birumu */
+}
+
+hr.dashed {
+    border-top: 2px dashed #999;
+}
+
+hr.dotted {
+    border-top: 2px dotted #999;
+}
+
+hr.solid {
+    border-top: 2px solid #999;
 }

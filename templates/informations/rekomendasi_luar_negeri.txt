@@ -1,0 +1,16 @@
+<h2 style="color: rgba(19, 106, 213, 0.85);">PERSYARATAN REKOMENDASI SEKOLAH LUAR NEGERI</h2>
+<ol>
+    <li>Surat rekomendasi dari Perorangan atau utusan yang ditujukan kepada Kepala Kantor Kementerian Agama Kota Surabaya</li>
+    <li>PDF Ijazah Terakhir</li>
+    <li>Paspor</li>
+    <li>Akte Kelahiran</li>
+    <li>KK dan KTP</li>
+</ol>
+<em>Catatan</em>
+<ol>
+    <li>Semua berkas asli di scan dalam bentuk PDF (bukan aplikasi CamScanner)</li>
+    <li>Untuk KTP dan KK harus domisili Surabaya</li>
+</ol>
+<hr class="solid mb-4 mt-4">
+<h2 style="color: rgba(19, 106, 213, 0.85);">ALUR PELAYANAN</h2>
+Pemohon wajib datang ke Kantor Kementerian Agama Kota Surabaya

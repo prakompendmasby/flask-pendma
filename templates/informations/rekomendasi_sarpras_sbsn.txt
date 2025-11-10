@@ -1,0 +1,13 @@
+<h2 style="color: rgba(19, 106, 213, 0.85);">PERSYARATAN REKOMENDASI SARPRAS DAN SBSN</h2>
+<ol>
+    <li>Surat rekomendasi dari Lembaga yang ditujukan kepada Kepala Kantor Kementerian Agama Kota Surabaya</li>
+    <li>Surat Izin Operasional</li>
+    <li>Proposal</li>
+</ol>
+<em>Catatan</em>
+<ol>
+    <li>Semua berkas asli di scan dalam bentuk PDF (bukan aplikasi CamScanner)</li>
+</ol>
+<hr class="solid mb-4 mt-4">
+<h2 style="color: rgba(19, 106, 213, 0.85);">ALUR PELAYANAN</h2>
+Pemohon wajib datang ke Kantor Kementerian Agama Kota Surabaya

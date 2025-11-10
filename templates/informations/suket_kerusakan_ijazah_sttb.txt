@@ -1,0 +1,11 @@
+<h2 style="color: rgba(19, 106, 213, 0.85);">SURAT KETERANGAN KERUSAKAN IJAZAH/STTB</h2>
+<ol>
+    <li>Pemohon adalah pemilik Ijazah/STTB/SKP Ijazah yang mengajukan permohonan pengesahan atau yang diberikan kuasa oleh pemiliknya</li>
+    <li>Mengisi dan menandatangani formulir permohonan  pengesahan fotokopi  Ijazah/STTB/SKP Ijazah</li>
+    <li>Menandatangani Surat Penyataan Tanggung Jawab Mutlak yang dibubuhi materai 10000</li>
+    <li>Menunjukan Ijazah/STTB/SKP Ijazah asli yang akan disahkan</li>
+    <li>Menyerahkan fotokopi Ijazah /STTB/SKP Ijazah yang akan disahkan paling banyak sepuluh lembar</li>
+</ol>
+<hr class="solid mb-4 mt-4">
+<h2 style="color: rgba(19, 106, 213, 0.85);">ALUR PELAYANAN</h2>
+Pemohon wajib datang ke Kantor Kementerian Agama Kota Surabaya

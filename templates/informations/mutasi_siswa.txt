@@ -1,0 +1,44 @@
+<h2 style="color: rgba(19, 106, 213, 0.85);">PERSYARATAN MUTASI SISWA MASUK</h2>
+<ol>
+    <li>Surat rekom dari Kemenag atau dari Dinas Pendidikan asal harus ada yang ditujukan kepada Kemenag Surabaya</li>
+    <li>Surat Pelepasan dari Lembaga Lama</li>
+    <li>Surat Penerimaan dari Lembaga Baru</li>
+    <li>Akte Kelahiran</li>
+    <li>Rapor terakhir</li>
+    <li>KK dan KTP</li>
+</ol>
+<em>Catatan</em>
+<ol>
+    <li>Semua berkas asli di scan dalam bentuk PDF (bukan aplikasi CamScanner)</li>
+    <li>
+    Untuk mutasi masuk
+    <ul>
+        <li>Dari Madrasah ke Madrasah harus ada surat rekom dari Kemenag asal</li>
+        <li>Dari Sekolah Umum ke Madrasah harus ada surat rekom dari Dinas Pendidikan asal</li>
+    </ul>
+    </li>
+    <li>
+    Untuk mutasi masuk provinsi
+    <ul>
+        <li>Dari Madrasah ke Madrasah harus ada surat rekom dari Kanwil Kemenag Provinsi asal yang di tujukan ke Provinsi tujuan</li>
+        <li>Dari Sekolah umum ke Madrasah harus ada surat rekom dari Dinas Pendidikan Provinsi asal di tujukan kepada Kanwil Kemenag Provinsi tujuan</li>
+    </ul>
+    </li>
+</ol>
+<hr class="dotted mb-4 mt-4">
+<h2 style="color: rgba(19, 106, 213, 0.85);">PERSYARATAN MUTASI SISWA KELUAR</h2>
+<ol>
+    <li>Permohonan rekom mutasi dari Lembaga asal ditujukan kepada Kemenag Surabaya</li>
+    <li>Surat Pelepasan dari Lembaga Lama</li>
+    <li>Surat Penerimaan dari Lembaga Baru</li>
+    <li>Akte Kelahiran</li>
+    <li>Rapor terakhir</li>
+    <li>KK dan KTP</li>
+</ol>
+<em>Catatan</em>
+<ul>
+    <li>Semua berkas asli di scan dalam bentuk PDF (bukan aplikasi CamScanner)</li>
+</ul>
+<hr class="solid mb-4 mt-4">
+<h2 style="color: rgba(19, 106, 213, 0.85);">ALUR PELAYANAN</h2>
+Pemohon wajib datang ke Kantor Kementerian Agama Kota Surabaya
