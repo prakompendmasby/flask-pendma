@@ -1,0 +1,16 @@
+<h2 style="color: rgba(19, 106, 213, 0.85);">REGISTRASI PTK BARU</h2>
+<ol>
+    <li>
+    Berkas pengajuan SM05 dan SM07 berserta lampiran  meliputi:
+    <ul>
+        <li>Fotokopi Kartu Keluarga (KK)</li>
+        <li>KTP</li>
+        <li>Ijazah Terakhir</li>
+        <li>Surat Keputusan (SK) pengangkatan</li>
+    </ul>
+    </li>
+    <li>Semua berkas pada point a di scan dan di laporkan ke admin emisgtk kemenag kota Surabaya</li>
+</ol>
+<hr class="solid mb-4 mt-4">
+<h2 style="color: rgba(19, 106, 213, 0.85);">ALUR PELAYANAN</h2>
+Admin EMIS GTK Kemenag Kota Surabaya akan memverifikasi dan mencetak bukti keaktifan PTK berupa dokumen SM08
