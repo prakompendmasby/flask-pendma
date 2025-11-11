@@ -55,12 +55,12 @@
 
           <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
             <li><a href="/">Beranda</a></li>
-            <li class="active"><a href="/information">Layanan</a></li>
+            <li><a href="/information">Layanan</a></li>
             <li class="has-children">
               <a href="#">Profile</a>
               <ul class="dropdown">
                 <li><a href="/struktur-kemenag">Struktur Organisasi KanKemenag Kota Surabaya</a></li>
-                <li><a href="/visi-misi">Visi dan Misi KanKemenag Kota Surabaya</a></li>
+                <li class="active"><a href="/visi-misi">Visi dan Misi KanKemenag Kota Surabaya</a></li>
                 <li><a href="/tugas-fungsi">Tugas dan Fungsi KanKemenag Kota Surabya</a></li>
               </ul>
             </li>
@@ -98,52 +98,42 @@
       </div>
     </div>
   </nav>
-  
-  <div class="untree_co-section" style="background: rgba(19, 106, 213, 0.85);">
-    <div class="container">
-      {% if title and content %}
-      <div class="row justify-content-center mb-3 mt-3">
-        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="line-bottom text-center text-white">INFORMASI PELAYANAN</h2>
-          <p class="line-bottom text-center text-white mb-2">{{ title.upper() }}</p>
-        </div>
-      </div>
 
-      <div class="row align-items-stretch">
-        <div class="col-lg-12 mb-4"  data-aos="fade-up" data-aos-delay="200">
-          <div class="media-h d-flex h-100">
-            <div class="media-h-body">
-              <p class="mb-4" data-aos="fade-up" data-aos-delay="100"><a href="/information" class="btn btn-secondary"><i class="fa-solid fa-arrow-left mr-2"></i>kembali</a></p>
-              <div class="meta ">
-                <span class="icon-calendar mr-2"></span>
-                <span>
-                  <script>
-                      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                      const today = new Date();
-                      document.write(today.toLocaleDateString('en-US', options));
-                  </script>
-                </span>
-                <span class="icon-person mr-2 ml-2"></span>
-                <span>Admin</span>
-              </div>
-              <p>
-                {{ content|safe }}
-              </p>
+  <!-- ✅ Hero Section -->
+    <div class="untree_co-hero overlay" 
+     style="background-image: url({{ url_for('static', filename='images/kemenagsby-face.jpg') }}); 
+            background-size: cover; 
+            background-position: center; 
+            position: relative;">
+  <!-- Overlay gelap transparan -->
+    <div style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0, 0, 50, 0.55);"></div>
+
+        <div class="container position-relative z-1 py-5">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-10">
+                    
+                    <h1 class="mb-3 fw-bold text-white" data-aos="fade-up" data-aos-delay="100">
+                    Visi
+                    </h1>
+                    <p class="text-white fs-5 mb-5" data-aos="fade-up" data-aos-delay="200">
+                    <em>“Terwujudnya masyarakat Indonesia yang taat beragama, rukun, cerdas, dan sejahtera lahir batin.”</em>
+                    </p>
+
+                    <h1 class="mt-4 mb-3 fw-bold text-white" data-aos="fade-up" data-aos-delay="300">
+                    Misi
+                    </h1>
+                    <ul class="list-unstyled text-white fs-5" data-aos="fade-up" data-aos-delay="400" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                    <li>• Meningkatkan kualitas kehidupan beragama</li>
+                    <li>• Memperkuat moderasi beragama untuk memperkokoh kerukunan umat</li>
+                    <li>• Meningkatkan akses dan mutu pendidikan agama serta keagamaan</li>
+                    <li>• Mewujudkan tata kelola pemerintahan yang bersih, efektif, transparan, dan akuntabel</li>
+                    <li>• Meningkatkan pelayanan keagamaan yang cepat, tepat, dan terpercaya</li>
+                    </ul>
+
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      {% else %}
-      <div class="row justify-content-center mb-3">
-        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="line-bottom text-center text-white">TIDAK ADA INFORMASI YANG DIPILIH</h2>
-          <p class="mb-4" data-aos="fade-up" data-aos-delay="100"><a href="/information" class="btn btn-secondary"><i class="fa-solid fa-arrow-left mr-2"></i>kembali</a></p>
-        </div>
-      </div>
-      {% endif %}
     </div>
-  </div>
-
 
 
   <!-- Footer -->

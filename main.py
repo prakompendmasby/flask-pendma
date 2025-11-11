@@ -168,6 +168,21 @@ def information_read(title):
     )
 
 
+@app.route('/struktur-kemenag')
+def struktur_kemenag():
+    return render_template('profil/struktur-kemenag.html')
+
+
+@app.route('/visi-misi')
+def visi_misi():
+    return render_template('profil/visi-misi.html')
+
+
+@app.route('/tugas-fungsi')
+def tugas_fungsi():
+    return render_template('profil/tugas-fungsi.html')
+
+
 
 if __name__ == '__main__':
     app.run()

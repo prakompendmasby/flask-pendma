@@ -55,13 +55,13 @@
 
           <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
             <li><a href="/">Beranda</a></li>
-            <li class="active"><a href="/information">Layanan</a></li>
+            <li><a href="/information">Layanan</a></li>
             <li class="has-children">
               <a href="#">Profile</a>
               <ul class="dropdown">
                 <li><a href="/struktur-kemenag">Struktur Organisasi KanKemenag Kota Surabaya</a></li>
                 <li><a href="/visi-misi">Visi dan Misi KanKemenag Kota Surabaya</a></li>
-                <li><a href="/tugas-fungsi">Tugas dan Fungsi KanKemenag Kota Surabya</a></li>
+                <li class="active"><a href="/tugas-fungsi">Tugas dan Fungsi KanKemenag Kota Surabya</a></li>
               </ul>
             </li>
             <!-- <li><a href="/news">News</a></li> -->
@@ -98,53 +98,88 @@
       </div>
     </div>
   </nav>
-  
-  <div class="untree_co-section" style="background: rgba(19, 106, 213, 0.85);">
-    <div class="container">
-      {% if title and content %}
-      <div class="row justify-content-center mb-3 mt-3">
-        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="line-bottom text-center text-white">INFORMASI PELAYANAN</h2>
-          <p class="line-bottom text-center text-white mb-2">{{ title.upper() }}</p>
-        </div>
-      </div>
 
-      <div class="row align-items-stretch">
-        <div class="col-lg-12 mb-4"  data-aos="fade-up" data-aos-delay="200">
-          <div class="media-h d-flex h-100">
-            <div class="media-h-body">
-              <p class="mb-4" data-aos="fade-up" data-aos-delay="100"><a href="/information" class="btn btn-secondary"><i class="fa-solid fa-arrow-left mr-2"></i>kembali</a></p>
-              <div class="meta ">
-                <span class="icon-calendar mr-2"></span>
-                <span>
-                  <script>
-                      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                      const today = new Date();
-                      document.write(today.toLocaleDateString('en-US', options));
-                  </script>
-                </span>
-                <span class="icon-person mr-2 ml-2"></span>
-                <span>Admin</span>
-              </div>
-              <p>
-                {{ content|safe }}
-              </p>
+  <!-- ✅ Hero Section -->
+    <div class="untree_co-section" style="background: rgba(19, 106, 213, 0.85); position: relative;">
+    <!-- Overlay -->
+    <div style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0, 0, 50, 0.55);"></div>
+
+        <div class="container position-relative z-1 py-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-10">
+
+                    <!-- Tugas Pokok -->
+                    <h1 class="mb-4 fw-bold text-white text-center" data-aos="fade-up" data-aos-delay="100">
+                    Tugas Pokok
+                    </h1>
+                    <p class="text-white fs-5 mb-4" data-aos="fade-up" data-aos-delay="200" style="text-align: justify;">
+                    Kementerian Agama Kota Surabaya memiliki tanggung jawab untuk melaksanakan sebagian tugas pemerintahan di bidang keagamaan dan pendidikan keagamaan di wilayah Kota Surabaya.
+                    </p>
+                    <p class="text-white fs-5 mb-5" data-aos="fade-up" data-aos-delay="250" style="text-align: justify;">
+                    Dalam melaksanakan tugasnya, Kementerian Agama berfungsi sebagai pengarah, pembina, dan pengawas pelaksanaan kebijakan keagamaan yang mencakup pelayanan publik, pendidikan agama, serta pembinaan kehidupan beragama masyarakat.
+                    </p>
+
+                    <!-- Divider -->
+                    <hr class="mx-auto my-5" style="width: 70%; border: 1px solid rgba(255, 255, 255, 0.3);">
+
+                    <!-- Rincian Tugas dan Fungsi -->
+                    <h1 class="mt-5 mb-4 fw-bold text-white text-center" data-aos="fade-up" data-aos-delay="300">
+                    Rincian Tugas dan Fungsi
+                    </h1>
+
+                    <div class="text-white fs-5 mx-auto" style="max-width: 900px; text-align: left; line-height: 1.8;" data-aos="fade-up" data-aos-delay="350">
+                    <ul style="padding-left: 1.5rem; list-style-type: none;">
+                        
+                        <li class="mb-4">
+                        <strong class="d-block mb-2">Tugas Umum Kementerian Agama Kota Surabaya</strong>
+                        <ul style="list-style-type: disc; padding-left: 2rem;">
+                            <li>Melaksanakan sebagian tugas pemerintahan di bidang keagamaan dan pendidikan keagamaan di wilayah Kota Surabaya berdasarkan kebijakan Menteri Agama dan ketentuan perundang-undangan.</li>
+                        </ul>
+                        </li>
+
+                        <li class="mb-4">
+                        <strong class="d-block mb-2">Fungsi Bidang Urusan Agama</strong>
+                        <ul style="list-style-type: disc; padding-left: 2rem;">
+                            <li>Menyelenggarakan pelayanan dan pembinaan kehidupan beragama.</li>
+                            <li>Menyiapkan data dan pelaporan terkait kegiatan keagamaan.</li>
+                            <li>Mengembangkan kerukunan antarumat beragama di wilayah kerja.</li>
+                        </ul>
+                        </li>
+
+                        <li class="mb-4">
+                        <strong class="d-block mb-2">Fungsi Bidang Pendidikan Agama dan Keagamaan</strong>
+                        <ul style="list-style-type: disc; padding-left: 2rem;">
+                            <li>Mengembangkan dan melaksanakan pendidikan agama di sekolah umum.</li>
+                            <li>Menyelenggarakan pendidikan keagamaan Islam di madrasah dan pesantren.</li>
+                            <li>Melaksanakan pengawasan dan pembinaan lembaga pendidikan agama.</li>
+                        </ul>
+                        </li>
+
+                        <li class="mb-4">
+                        <strong class="d-block mb-2">Fungsi Bidang Haji dan Umroh</strong>
+                        <ul style="list-style-type: disc; padding-left: 2rem;">
+                            <li>Memberikan pelayanan, pembinaan, dan perlindungan kepada jamaah haji dan umrah.</li>
+                            <li>Mengelola administrasi dan dokumen perjalanan haji serta pelaporan.</li>
+                            <li>Bekerja sama dengan instansi terkait untuk kelancaran ibadah haji dan umrah.</li>
+                        </ul>
+                        </li>
+
+                        <li class="mb-2">
+                        <strong class="d-block mb-2">Fungsi Bidang Bimbingan Masyarakat Islam</strong>
+                        <ul style="list-style-type: disc; padding-left: 2rem;">
+                            <li>Meningkatkan mutu penyuluhan dan pembinaan umat Islam.</li>
+                            <li>Mengembangkan kegiatan zakat, wakaf, dan majelis taklim.</li>
+                            <li>Mendorong peran aktif tokoh agama dalam pembangunan moral masyarakat.</li>
+                        </ul>
+                        </li>
+
+                    </ul>
+                    </div>
+
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      {% else %}
-      <div class="row justify-content-center mb-3">
-        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="line-bottom text-center text-white">TIDAK ADA INFORMASI YANG DIPILIH</h2>
-          <p class="mb-4" data-aos="fade-up" data-aos-delay="100"><a href="/information" class="btn btn-secondary"><i class="fa-solid fa-arrow-left mr-2"></i>kembali</a></p>
-        </div>
-      </div>
-      {% endif %}
     </div>
-  </div>
-
-
 
   <!-- Footer -->
   <div class="site-footer">

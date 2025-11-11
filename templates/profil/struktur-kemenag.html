@@ -55,11 +55,11 @@
 
           <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
             <li><a href="/">Beranda</a></li>
-            <li class="active"><a href="/information">Layanan</a></li>
+            <li><a href="/information">Layanan</a></li>
             <li class="has-children">
               <a href="#">Profile</a>
               <ul class="dropdown">
-                <li><a href="/struktur-kemenag">Struktur Organisasi KanKemenag Kota Surabaya</a></li>
+                <li class="active"><a href="/struktur-kemenag">Struktur Organisasi KanKemenag Kota Surabaya</a></li>
                 <li><a href="/visi-misi">Visi dan Misi KanKemenag Kota Surabaya</a></li>
                 <li><a href="/tugas-fungsi">Tugas dan Fungsi KanKemenag Kota Surabya</a></li>
               </ul>
@@ -101,46 +101,52 @@
   
   <div class="untree_co-section" style="background: rgba(19, 106, 213, 0.85);">
     <div class="container">
-      {% if title and content %}
       <div class="row justify-content-center mb-3 mt-3">
         <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="line-bottom text-center text-white">INFORMASI PELAYANAN</h2>
-          <p class="line-bottom text-center text-white mb-2">{{ title.upper() }}</p>
+          <h2 class="line-bottom text-center text-white">Struktur Organisasi</h2>
+          <p class="line-bottom text-center text-white mb-2">Kantor Kementerian Agama Kota Surabaya</p>
         </div>
       </div>
-
       <div class="row align-items-stretch">
         <div class="col-lg-12 mb-4"  data-aos="fade-up" data-aos-delay="200">
-          <div class="media-h d-flex h-100">
+          <div class="media-h d-flex align-items-center justify-content-center h-100 p-3">
             <div class="media-h-body">
-              <p class="mb-4" data-aos="fade-up" data-aos-delay="100"><a href="/information" class="btn btn-secondary"><i class="fa-solid fa-arrow-left mr-2"></i>kembali</a></p>
-              <div class="meta ">
-                <span class="icon-calendar mr-2"></span>
-                <span>
-                  <script>
-                      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                      const today = new Date();
-                      document.write(today.toLocaleDateString('en-US', options));
-                  </script>
-                </span>
-                <span class="icon-person mr-2 ml-2"></span>
-                <span>Admin</span>
-              </div>
-              <p>
-                {{ content|safe }}
-              </p>
+              <img src="{{ url_for('static', filename='images/struktur-kemenag.jpg') }}" class="img-fluid" style="height: auto; width: auto;">
             </div>
           </div>
         </div>
       </div>
-      {% else %}
-      <div class="row justify-content-center mb-3">
-        <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="line-bottom text-center text-white">TIDAK ADA INFORMASI YANG DIPILIH</h2>
-          <p class="mb-4" data-aos="fade-up" data-aos-delay="100"><a href="/information" class="btn btn-secondary"><i class="fa-solid fa-arrow-left mr-2"></i>kembali</a></p>
+    </div>
+  </div>
+
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row align-items-stretch">
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card text-center border- shadow-sm py-4">
+                <div class="card-body">
+                    <h5 class="mt-3 mb-2 fw-bold">Kepala Dinas</h5>
+                    <p class="mb-0 text-muted">Bertanggung jawab atas keseluruhan kebijakan dan arah organisasi</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card text-center border- shadow-sm py-4">
+                <div class="card-body">
+                    <h5 class="mt-3 mb-2 fw-bold">Bidang</h5>
+                    <p class="mb-0 text-muted">Mengelola bidang-bidang teknis sesuai dengan tugas pokok dan fungsi</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card text-center border- shadow-sm py-4">
+                <div class="card-body">
+                    <h5 class="mt-3 mb-2 fw-bold">Staff</h5>
+                    <p class="mb-0 text-muted">Mendukung pelaksanaan kegiatan operasional dinas sehari-hari</p>
+                </div>
+            </div>
         </div>
       </div>
-      {% endif %}
     </div>
   </div>
 
