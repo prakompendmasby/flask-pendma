@@ -107,12 +107,12 @@ def contact():
             respons = "✅ Data berhasil tersimpan!"
             alert_type = "success"
 
-            return render_template("contact.html", respons=respons, alert_type=alert_type, page_type=page_type, ticket_code=ticket_code)
+            return render_template("contact/contact.html", respons=respons, alert_type=alert_type, page_type=page_type, ticket_code=ticket_code)
     except Exception as e:
         respons = f"❌ Gagal menyimpan data, silakan coba lagi. Error: {e}"
         alert_type = "danger"
     
-    return render_template("contact.html", respons=respons, alert_type=alert_type, page_type=page_type)
+    return render_template("contact/contact.html", respons=respons, alert_type=alert_type, page_type=page_type)
 
 
 @app.route('/contact-check', methods=['GET', 'POST'])
@@ -133,21 +133,21 @@ def contact_check():
                 respons = hasil
                 alert_type = "success"
                 page_type = "ticket"
-                return render_template("contact-check.html", respons=respons, alert_type=alert_type, page_type=page_type, ticket_code=ticket_code)
+                return render_template("contact/contact-check.html", respons=respons, alert_type=alert_type, page_type=page_type, ticket_code=ticket_code)
             else:
                 respons = f"❌ Tidak ada data dengan kode tiket {ticket_code}"
                 alert_type = "danger"
-                return render_template("contact-check.html", respons=respons, alert_type=alert_type, page_type=page_type, ticket_code=ticket_code)
+                return render_template("contact/contact-check.html", respons=respons, alert_type=alert_type, page_type=page_type, ticket_code=ticket_code)
     except Exception as e:
         respons = f"❌ Gagal mencari data, silakan coba lagi. Error: {e}"
         alert_type = "danger"
     
-    return render_template('contact-check.html', respons=respons, alert_type=alert_type, page_type=page_type)
+    return render_template('contact/contact-check.html', respons=respons, alert_type=alert_type, page_type=page_type)
 
 
 @app.route('/information')
 def information():
-    return render_template('information.html')
+    return render_template('information/information.html')
 
 
 @app.route('/information-read/', defaults={'title': None})
@@ -156,13 +156,13 @@ def information_read(title):
     content = None  # default
     if title is not None:
         try:
-            with open(f"templates/informations/{title}.txt", "r", encoding="utf-8") as f:
+            with open(f"templates/information-txt/{title}.txt", "r", encoding="utf-8") as f:
                 content = f.read()
         except FileNotFoundError:
             content = None
     
     return render_template(
-        'information-read.html',
+        'information/information-read.html',
         title=title.replace('_', ' ') if title else None,
         content=content
     )
