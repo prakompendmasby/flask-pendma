@@ -140,6 +140,9 @@
                     ">
                     {{ ticket_code }}
                   </span>
+                  <p data-aos="fade-up" data-aos-delay="350">
+                    <button class="btn btn-primary" onclick="copyTicketCode()">Copy Kode</button>
+                  </p>
                 </div>
                 <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="/" class="btn btn-secondary">Beranda</a></p>
                 {% else %}
@@ -291,5 +294,20 @@
   <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
   <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+  <script>
+    function copyTicketCode() {
+      const text = "{{ ticket_code }}";
+
+      navigator.clipboard.writeText(text)
+        .then(() => {
+          alert("Kode tiket berhasil disalin!");
+        })
+        .catch(err => {
+          console.error("Gagal menyalin:", err);
+          alert("Gagal menyalin kode.");
+        });
+    }
+  </script>
 </body>
 </html>
