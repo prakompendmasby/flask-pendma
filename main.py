@@ -10,15 +10,18 @@ import random
 import string
 
 
-def generate_ticket_code():
+def generate_ticket_code(code_name):
     # Format timestamp
-    timestamp = datetime.datetime.now().strftime("%Y%m%d#%H%M%S#%f#%a").upper()
+    # timestamp = datetime.datetime.now().strftime("%Y%m%d#%H%M%S#%f#%a").upper()
+    date = datetime.datetime.now().strftime("%Y%m%d")
+    milisecond = datetime.datetime.now().strftime("%f")
     
     # Random uppercase letters
-    random_letters = ''.join(random.choice(string.ascii_uppercase) for _ in range(3))
+    # random_letters = ''.join(random.choice(string.ascii_uppercase) for _ in range(3))
+    random_letters = ''.join(random.choice(string.ascii_uppercase) for _ in range(1))
     
     # Combine with #
-    return f"{timestamp}#{random_letters}"
+    return f"{date}{code_name}{random_letters}{milisecond}"
 
 
 def connect_google_sheet(worksheet_name, sheet_name):
@@ -92,7 +95,7 @@ def contact():
     alert_type = None
     try:
         if request.method == "POST":
-            ticket_code = generate_ticket_code()
+            ticket_code = generate_ticket_code(code_name="PGDN")
             name = request.form["name"]
             phone = request.form["phone"]
             subject = request.form["subject"]

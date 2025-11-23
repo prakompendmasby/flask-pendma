@@ -199,7 +199,7 @@
             {{ respons }}
           </div>
         {% endif %}
-          <form action="" method="POST">
+          <form action="" method="POST" id="contactForm">
             <div class="row">
               <div class="col-6 mb-3">
                 <input type="text" name="name" class="form-control" placeholder="Nama Anda" required>
@@ -215,7 +215,7 @@
               </div>
 
               <div class="col-12">
-                <input type="submit" value="Kirim Pengaduan" class="btn btn-primary">
+                <input type="submit" value="Kirim Pengaduan" class="btn btn-primary" id="submitBtn">
               </div>
             </div>
           </form>
@@ -302,7 +302,7 @@
 
       navigator.clipboard.writeText(text)
         .then(() => {
-          alert("Kode tiket berhasil disalin!");
+          alert("Kode tiket berhasil disalin! Harap segera simpan salinan kode tiket tersebut!");
         })
         .catch(err => {
           console.error("Gagal menyalin:", err);
@@ -310,5 +310,14 @@
         });
     }
   </script>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function() {
+        const btn = document.getElementById("submitBtn");
+        btn.disabled = true;
+        btn.value = "Mengirim...";
+    });
+  </script>
+
 </body>
 </html>

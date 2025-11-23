@@ -111,7 +111,7 @@
                       {{ respons }}
                     </div>
                   {% endif %}
-                <form action="" method="POST" class="p-4 rounded-4 shadow-lg" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(6px);">                
+                <form action="" method="POST" id="contactForm" class="p-4 rounded-4 shadow-lg" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(6px);">                
                     <p class="text-white mb-4 heading">Cek Pengaduan</P>
                     <div class="mb-3">
                         <!-- <input type="text" name="ticket-code" class="form-control text-white" placeholder="Kode Tiket Pengaduan" required 
@@ -120,7 +120,7 @@
                             style="background-color: rgba(255,255,255,0.25); border: none; border-radius: 8px; padding: 12px 16px;"></textarea>
                     </div>
                     <div class="col-12">
-                        <input type="submit" value="Cek Pengaduan" class="btn btn-primary">
+                        <input type="submit" value="Cek Pengaduan" class="btn btn-primary"  id="submitBtn">
                     </div>
                 </form>
                 {% elif page_type == "ticket" %}
@@ -248,5 +248,14 @@
   <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
   <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function() {
+        const btn = document.getElementById("submitBtn");
+        btn.disabled = true;
+        btn.value = "Memproses...";
+    });
+  </script>
+
 </body>
 </html>
