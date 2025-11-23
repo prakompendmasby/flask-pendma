@@ -11,6 +11,3 @@
     <li>Semua berkas asli di scan dalam bentuk PDF (bukan aplikasi CamScanner)</li>
     <li>Untuk KTP dan KK harus domisili Surabaya</li>
 </ol>
-<hr class="solid mb-4 mt-4">
-<h2 style="color: rgba(19, 106, 213, 0.85);">ALUR PELAYANAN</h2>
-Pemohon wajib datang ke Kantor Kementerian Agama Kota Surabaya
