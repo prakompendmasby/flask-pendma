@@ -1,0 +1,49 @@
+<p>Madrasah berperan strategis dalam mencetak generasi yang tidak hanya unggul secara akademik, tetapi juga memiliki kepribadian yang Islami. Dengan memadukan kurikulum agama dan umum, madrasah berkontribusi dalam pembangunan sumber daya manusia yang berintegritas dan mampu menghadapi dinamika perkembangan zaman tanpa kehilangan jati diri keislamannya.</p>
+
+<hr class="solid mb-4 mt-4">
+
+<h2 style="color: rgba(19, 106, 213, 0.85);">Raudhatul Athfal (RA)</h2>
+<p>Raudhatul Athfal merupakan jenjang pendidikan anak usia dini yang berfokus pada pengenalan nilai-nilai Islam sejak dini melalui pendekatan pembelajaran yang menyenangkan dan sesuai tahap perkembangan anak. Program RA meliputi pengenalan adab dan akhlak Islami, bacaan Al-Qur’an sederhana, pengembangan motorik dan kognitif, serta interaksi sosial dalam lingkungan yang mendukung tumbuh kembang anak secara optimal.</p>
+<ul>
+  <li><strong>Durasi:</strong> 2 tahun (usia 4–6 tahun)</li>
+  <li><strong>Tujuan:</strong> Membentuk pondasi dasar keimanan, karakter, dan kecerdasan emosional serta sosial anak sejak dini.</li>
+</ul>
+
+<h2 style="color: rgba(19, 106, 213, 0.85);">Madrasah Ibtidaiyah (MI)</h2>
+<p>Madrasah Ibtidaiyah setara dengan Sekolah Dasar (SD), menyelenggarakan pendidikan formal selama enam tahun dengan kurikulum terpadu antara pendidikan agama Islam dan ilmu pengetahuan umum. MI bertujuan menghasilkan peserta didik yang tidak hanya cakap secara akademik, tetapi juga memiliki pemahaman agama yang kuat serta perilaku yang sesuai dengan nilai-nilai Islam.</p>
+<ul>
+  <li><strong>Materi pembelajaran utama:</strong></li>
+  <ul>
+    <li>Pendidikan agama Islam (Al-Qur’an, hadis, fiqih, akhlak)</li>
+    <li>Matematika, IPA, IPS, Bahasa Indonesia, Bahasa Arab, dan bahasa asing lainnya</li>
+    <li>Pendidikan karakter dan budaya bangsa</li>
+  </ul>
+  <li><strong>Durasi:</strong> 6 tahun (usia 6–12 tahun)</li>
+  <li><strong>Tujuan:</strong> Membentuk peserta didik yang beriman, bertakwa, cerdas, dan berakhlak mulia.</li>
+</ul>
+
+<h2 style="color: rgba(19, 106, 213, 0.85);">Madrasah Tsanawiyah (MTs)</h2>
+<p>Madrasah Tsanawiyah setara dengan Sekolah Menengah Pertama (SMP), merupakan jenjang pendidikan menengah pertama yang menekankan pendalaman ilmu agama dan ilmu pengetahuan umum yang lebih luas dan mendalam. MTs menyiapkan peserta didik untuk menghadapi tantangan akademik di jenjang berikutnya serta membekali mereka dengan nilai-nilai keislaman yang kuat.</p>
+<ul>
+  <li><strong>Materi pembelajaran:</strong></li>
+  <ul>
+    <li>Agama Islam lebih intensif (Tafsir, hadis, sejarah Islam, fikih)</li>
+    <li>Ilmu pengetahuan alam dan sosial yang lebih komprehensif</li>
+    <li>Bahasa Arab sebagai bahasa keagamaan dan Bahasa Inggris</li>
+  </ul>
+  <li><strong>Durasi:</strong> 3 tahun (usia 12–15 tahun)</li>
+  <li><strong>Tujuan:</strong> Menghasilkan generasi yang berilmu, beriman, berakhlak mulia, serta siap melanjutkan ke jenjang pendidikan lanjutan atau dunia kerja.</li>
+</ul>
+
+<h2 style="color: rgba(19, 106, 213, 0.85);">Madrasah Aliyah (MA)</h2>
+<p>Madrasah Aliyah setara dengan Sekolah Menengah Atas (SMA), merupakan jenjang pendidikan menengah atas yang memadukan penguasaan ilmu agama dengan ilmu pengetahuan modern dan keahlian khusus sesuai minat dan bakat peserta didik. MA bertugas mempersiapkan siswa untuk melanjutkan pendidikan tinggi maupun berkontribusi di masyarakat dengan integritas dan kompetensi tinggi.</p>
+<ul>
+  <li><strong>Program pembelajaran:</strong></li>
+  <ul>
+    <li>Studi agama Islam lanjutan (fiqh, ushul fiqh, tafsir, akhlak, sejarah kebudayaan Islam)</li>
+    <li>Matematika, IPA, IPS, Bahasa Arab, Bahasa Inggris, dan keterampilan lainnya</li>
+    <li>Pilihan jurusan keagamaan dan umum (IPA, IPS, Bahasa)</li>
+  </ul>
+  <li><strong>Durasi:</strong> 3 tahun (usia 15–18 tahun)</li>
+  <li><strong>Tujuan:</strong> Mencetak lulusan yang cerdas akademik, matang spiritual dan akhlak, serta siap berperan aktif di masyarakat dan dunia global.</li>
+</ul>
