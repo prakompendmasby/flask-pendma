@@ -3,5 +3,5 @@
     <li>Berkas pengajuan Surat Tanda Bukti Pengajuan Non Aktif yang sudah dicetak dan ditandatangani kepala madrasah SM04</li>
     <li>Surat pengunduran diri dari PTK (jika alasan nonaktif adalah mengundurkan diri)</li>
     <li>Keterangan kematian dari instansi terkait (jika alasan nonaktif adalah meninggal dunia)</li>
-    <li>Semua berkas pada point a di scan dan di laporkan ke admin emisgtk kemenag kota Surabaya</li>
+    <li>Semua berkas pada point a di scan dan di laporkan ke admin EMIS GTK Kemenag Kota Surabaya</li>
 </ol>

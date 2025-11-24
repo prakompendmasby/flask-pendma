@@ -9,5 +9,5 @@
         <li>SK sertifikat pendidik (jika sudah sertifikasi)</li>
     </ul>
     </li>
-    <li>Semua berkas pada point a di scan dan di laporkan ke admin emisgtk kemenag kota Surabaya</li>
+    <li>Semua berkas pada point a di scan dan di laporkan ke admin EMIS GTK Kemenag Kota Surabaya</li>
 </ol>
