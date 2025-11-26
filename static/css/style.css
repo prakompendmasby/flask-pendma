@@ -698,7 +698,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(19, 106, 213, 0.85);
+      background: rgba(19, 106, 213, 0.75);
       z-index: -0; }
   .untree_co-hero > .container, .bg-img > .container {
     position: relative;
